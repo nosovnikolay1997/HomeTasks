@@ -5,6 +5,6 @@ Console.Write("Введите второе число: ");
 int b = Convert.ToInt32(Console.ReadLine());
 int rem = a % b;
 if (rem == 0)
-	Console.WriteLine($"{b} кратно {a}");
+	Console.WriteLine($"{a} кратно {b}");
 else
-	Console.WriteLine($"{b} не кратно {a}, остаток {rem}");
+	Console.WriteLine($"{a} не кратно {b}, остаток {rem}");
