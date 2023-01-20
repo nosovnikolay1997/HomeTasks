@@ -1,0 +1,10 @@
+﻿Console.Clear();
+Console.WriteLine("Введите X(A): ");
+double xa = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите Y(A): ");
+double ya = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите X(B): ");
+double xb = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите Y(B): ");
+double yb = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine($"Расстояние между точками: {Math.Sqrt((xb - xa)*(xb - xa) + (yb - ya)*(yb - ya))}");
