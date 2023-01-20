@@ -7,4 +7,4 @@ Console.WriteLine("Введите X(B): ");
 double xb = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите Y(B): ");
 double yb = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine($"Расстояние между точками: {Math.Sqrt((xb - xa)*(xb - xa) + (yb - ya)*(yb - ya))}");
+Console.WriteLine($"Расстояние между точками: {Math.Round(Math.Sqrt(Math.Pow(xb - xa, 2) + Math.Pow(yb - ya, 2)), 2)}");
