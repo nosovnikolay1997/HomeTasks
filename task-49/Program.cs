@@ -16,7 +16,7 @@ void PrintArray(int[,] array)
 	}
 }
 
-void SquareEven(int[,] array)
+void SquareOdd(int[,] array)
 {
 	for (int i = 1; i < array.GetLength(0); i += 2)
 		for (int j = 1; j < array.GetLength(1); j += 2)
@@ -29,6 +29,6 @@ int[] input = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
 int[,] array = new int[input[0], input[1]];
 FillArray(array);
 PrintArray(array);
-SquareEven(array);
+SquareOdd(array);
 Console.WriteLine();
 PrintArray(array);
