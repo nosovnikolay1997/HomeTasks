@@ -17,10 +17,8 @@ void PrintArray(int[,] array)
 }
 
 Console.Clear();
-Console.Write("Введите количество строк: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество столбцов: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[,] array = new int[m,n];
+Console.Write("Введите размеры массива: ");
+int[] input = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[,] array = new int[input[0],input[1]];
 FillArray(array);
 PrintArray(array);
